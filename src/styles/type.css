@@ -1,0 +1,128 @@
+
+html {
+    font-family: Roboto;
+    font-size: 18px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+h1 {
+    --tt-key: h1;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+  
+  @keyframes h1 {
+    0%, 25.874999999999996% {
+      font-size: 1.54rem;
+    }
+    33.25% {
+      font-size: 1.64rem;
+    }
+    48% {
+      font-size: 1.74rem;
+    }
+    64% {
+      font-size: 1.84rem;
+    }
+    100% {
+      font-size: 1.94rem;
+    }
+  }
+
+h2, h3, {
+    font-weight: 500;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+h2 {
+    --tt-key: h2;
+}
+
+@keyframes h2 {
+    33.25% {
+      font-size: 1.34rem;
+    }
+    48% {
+      font-size: 1.44rem;
+    }
+    64% {
+      font-size: 1.54rem;
+    }
+    100% {
+      font-size: 1.64rem;
+    }
+  }
+
+  h3 {
+      --tt-key: h3;
+  }
+
+  @keyframes h3 {
+    0%, 25.874999999999996% {
+        font-size: 1.1rem;
+      }
+      33.25% {
+        font-size: 1.2rem;
+      }
+      48% {
+        font-size: 1.3rem;
+      }
+      64% {
+        font-size: 1.4rem;
+      }
+      100% {
+        font-size: 1.5rem;
+      }
+}
+
+
+
+
+.large {
+    --tt-key: large;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+@keyframes large {
+    0%, 25.874999999999996% {
+        font-size: 1.1rem;
+        margin-bottom: 0px;
+      }
+      33.25% {
+        font-size: 1.2rem;
+      }
+      48% {
+        font-size: 1.3rem;
+      }
+      64% {
+        font-size: 1.4rem;
+      }
+      100% {
+        font-size: 1.5rem;
+      }
+}
+
+.medium {
+    --tt-key: medium;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+@keyframes medium {
+    0%, 30% {
+        font-size: 1.1rem;
+    }
+    100% {
+        font-size: 1.25rem
+    }
+}
+
+.bold {
+    font-weight: 700;
+}
+

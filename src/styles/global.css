@@ -1,0 +1,48 @@
+@import "reset.css";
+@import "button.css";
+@import "colors.css";
+@import "type.css";
+
+section {
+    margin: 70px 0;
+}
+
+.container {
+    max-width: 1440px;
+    padding: 0 3%;
+    margin: 0 auto;
+    /* border: 4px solid darkgreen; */
+}
+
+.margin-top {
+    margin-top: 30px;
+}
+
+.half-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+}
+
+@media (max-width: 900px) {
+    .half-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.cta-button {
+    text-decoration: none;
+    background: #00D54B;
+    border-radius: 4px;
+}
+
+.hero-video {
+    /* background: coral; */
+}
+
+.sales-copy {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    /* border: 3px solid gold; */
+}

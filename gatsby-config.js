@@ -5,5 +5,24 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  plugins: [
+    {
+      // resolve: `gatsby-plugin-typography`,
+      // options: {
+      //   pathToConfigModule: `src/utils/typography`,
+      //   omitGoogleFont: true,
+      // },
+      // resolve: `gatsby-plugin-postcss`,
+      // options: {
+      //   postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
+      // },
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `roboto\:400,500,700` // you can also specify font weights and styles
+        ],
+      },
+      resolve: `typeturajs`
+    },
+  ],
 }
