@@ -22,7 +22,13 @@ module.exports = {
           `roboto\:400,500,700` // you can also specify font weights and styles
         ],
       },
-      resolve: `typeturajs`
+      resolve: `typeturajs`,
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /assets/
+        }
+      }
     },
   ],
 }

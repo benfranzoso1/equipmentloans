@@ -58,3 +58,9 @@
         background-position: 2rem 4rem;
     }
 }
+
+.arrow {
+    margin-left: 0.4em;
+    height: 20px;
+    fill: #fff;
+}

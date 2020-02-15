@@ -30,10 +30,23 @@ section {
     }
 }
 
-.cta-button {
-    text-decoration: none;
-    background: #00D54B;
-    border-radius: 4px;
+.third-grid {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin-bottom: 70px;
+}
+
+@media (max-width: 900px) {
+    .third-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.flexcenter {
+    display: flex;
+    justify-content: center;
 }
 
 .hero-video {
@@ -46,3 +59,16 @@ section {
     justify-content: center; */
     /* border: 3px solid gold; */
 }
+
+
+.step {
+    color: #fff;
+    margin: 0 auto;
+    display: flex;
+    background-color: var(--brand-color);
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    font-weight: 500;}
