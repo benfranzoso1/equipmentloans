@@ -3,26 +3,19 @@
  *
  * See: https://www.gatsbyjs.org/docs/gatsby-config/
  */
-
+const path = require(`path`)
 module.exports = {
   plugins: [
     {
-      // resolve: `gatsby-plugin-typography`,
-      // options: {
-      //   pathToConfigModule: `src/utils/typography`,
-      //   omitGoogleFont: true,
-      // },
-      // resolve: `gatsby-plugin-postcss`,
-      // options: {
-      //   postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
-      // },
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        fonts: [
-          `roboto\:400,500,700` // you can also specify font weights and styles
-        ],
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
-      resolve: `typeturajs`,
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {

@@ -1,16 +1,55 @@
 import React from "react"
-import Typetura from "typeturajs"
+
 import Hero from "../components/hero"
 import Steps from "../components/steps"
-export default () => (
-    <div>
-      <Hero/>
-      <Steps/>
-      <h2>Equipment Loans</h2>
-      <p className="medium">Such wow. Very React.</p>
-      <h3>Equipment Loans</h3>
-      <p>Such wow. Very React.</p>
-      <h4>Equipment Loans</h4>
-      <p>Such wow. Very React.</p>
-    </div>
+import Why from "../components/why"
+import Faq from "../components/faq"
+
+import BackgroundImage from "gatsby-background-image"
+import { graphql } from "gatsby"
+
+// export default () => (
+//     <div>
+//       <Hero/>
+//       <Steps/>
+//       <Background/>
+//       <h2>Equipment Loans</h2>
+//       <p className="medium">Such wow. Very React.</p>
+//       <h3>Equipment Loans</h3>
+//       <p>Such wow. Very React.</p>
+//       <h4>Equipment Loans</h4>
+//       <p>Such wow. Very React.</p>
+//     </div>
+//   )
+
+  const IndexPage = (props) => (
+    <main>
+        <Hero/>
+        <Steps/>
+          <BackgroundImage
+              className="background-section"
+              fluid={props.data.indexImage.childImageSharp.fluid}
+              fadeIn
+          >
+          <div className="black-overlay"></div>
+          </BackgroundImage>
+        <Why/>
+        <Faq/>
+    </main>
   )
+
+  
+  
+  export default IndexPage;
+  
+  export const pageQuery = graphql`
+  query {
+    indexImage: file(relativePath: { eq: "tow1.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1800, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`;

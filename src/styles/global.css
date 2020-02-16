@@ -3,6 +3,10 @@
 @import "colors.css";
 @import "type.css";
 
+main {
+    margin: 0 auto;
+}
+
 section {
     margin: 70px 0;
 }
@@ -14,8 +18,13 @@ section {
     /* border: 4px solid darkgreen; */
 }
 
+
 .margin-top {
     margin-top: 30px;
+}
+
+.margin-bottom {
+    margin-bottom: 70px;
 }
 
 .half-grid {
@@ -36,10 +45,28 @@ section {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 40px;
     margin-bottom: 70px;
+    /* border: 2px solid saddlebrown; */
 }
 
 @media (max-width: 900px) {
     .third-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.fourth-grid {
+    /* text-align: center; */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 40px;
+    margin-bottom: 70px;
+
+    /* border: 2px solid saddlebrown; */
+}
+
+@media (max-width: 900px) {
+    .fourth-grid {
         grid-template-columns: 1fr;
     }
 }
@@ -72,3 +99,43 @@ section {
     width: 30px;
     border-radius: 50%;
     font-weight: 500;}
+
+
+      
+.background-section {
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* margin-bottom: 10px; */
+}
+
+.black-overlay {
+    display: -webkit-flex;  /* Safari */
+    display: flex;
+    background-color: rgba(0,0,0,.3);
+    height: 100%;
+    align-items: center;
+    
+    color: white;
+
+}
+
+.feature span {
+    margin-right: 25px;
+}
+
+.feature h3 {
+    margin-top: 0;
+}
+
+.feature {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.faq h2 {
+    margin-bottom: 50px;
+}
