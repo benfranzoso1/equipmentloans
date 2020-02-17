@@ -1,4 +1,13 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
+
+body {
+  font-family: "Roboto";
+  font-size: 18px;
+}
 
 
 
