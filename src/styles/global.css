@@ -3,37 +3,6 @@
 @import "colors.css";
 @import "type.css";
 
-/* @font-face {
-    font-family: "Jost";
-    src: local("Jost"), url("../fonts/Jost-400-Book.otf");
-    font-weight: 400;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: "Jost";
-    src: local("Jost"), url("../fonts/Jost-500-Medium.otf");
-    font-weight: 500;
-    font-display: swap;
-  }
-  
-  @font-face {
-    font-family: "Jost";
-    src: local("Jost"), url("../fonts/Jost-700-bold.otf");
-    font-weight: 700;
-    font-display: swap;
-  }
-
-* {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  
-  body {
-    font-family: "Jost";
-    font-size: 18px;
-  } */
 
 html, body {
     margin: 0;
@@ -47,8 +16,14 @@ main {
 }
 
 section {
+    margin-bottom: 70px;
+}
+
+.industry1 {
+    margin-bottom: 70px;
     padding-top: 70px;
     padding-bottom: 70px;
+    background-color: rgba(0, 213, 75, 0.06);
 }
 
 .container {
@@ -127,9 +102,6 @@ section {
     /* border: 3px solid gold; */
 }
 
-.steps {
-    background-color: rgba(0, 213, 75, 0.06);
-}
 
 
 .step {
@@ -153,7 +125,7 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* margin-bottom: 10px; */
+    margin-bottom: 70px;
 }
 
 .black-overlay {

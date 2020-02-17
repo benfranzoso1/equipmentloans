@@ -1,6 +1,8 @@
 import React from "react"
 
 import Hero from "../components/hero"
+import About from "../components/about"
+import Industry1 from "../components/industry1"
 import Steps from "../components/steps"
 import Why from "../components/why"
 import Faq from "../components/faq"
@@ -25,6 +27,7 @@ import { graphql } from "gatsby"
   const IndexPage = (props) => (
     <main>
         <Hero/>
+        <About/>
         <Steps/>
           <BackgroundImage
               className="background-section"
