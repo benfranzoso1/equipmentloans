@@ -11,7 +11,7 @@ export default () => (
                <div className="feature">
                    <span><Check className="check"></Check></span>
                    <div>
-                       <h3>Headline</h3>
+                       <h3>Headline!</h3>
                        <p>Place a feaure here you want to talk about. Couple of lines, couple of slam pigs.</p>
                     </div>
                </div>
