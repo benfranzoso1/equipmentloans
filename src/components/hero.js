@@ -5,7 +5,7 @@ export default () => (
 <section className="hero-video">
     <div className="container half-grid">
         <div className="sales-copy">
-            <h1>Purchasing Equipment Just Got Easier</h1>
+            <h1>EASY. FAST. FUNDED!</h1>
             <p className="large"><span className="bold">Headache free</span> financing so you can get back to what really matters, making money.</p>
             <a href="https://ben1238.typeform.com/to/PRIyZc" className="btn-large hidden" target="_blank" rel="noopener noreferrer">Get Started <Arrow className="arrow"/></a>
         </div>
