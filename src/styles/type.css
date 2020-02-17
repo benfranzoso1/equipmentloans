@@ -1,127 +1,137 @@
 
- html {
-    font-family: Roboto;
-    font-size: 18px;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-400-Book.otf");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-500-Medium.otf");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost-700-bold.otf");
+  font-weight: 700;
+  font-display: swap;
+}
+
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  font-family: "Jost";
+  font-size: 18px;
+}
+
+p {
+  font-size: 1.1rem;
+}
+
+h1, h2, h3, h4, p {
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+h2, h3, h4 {
+  font-weight: 500;
+  margin-bottom: 30px;
 }
 
 
 h1 {
-    --tt-key: h1;
+    font-size: 2.2rem;
     font-weight: 700;
-    line-height: 1.2;
-    margin-top: 0;
+    line-height: 1.5;
     margin-bottom: 30px;
 }
+
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 1.84rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 1.64rem;
+  }
+}
   
-  @keyframes h1 {
-    0%, 25.874999999999996% {
-      font-size: 1.54rem;
-    }
-    33.25% {
-      font-size: 1.64rem;
-    }
-    48% {
-      font-size: 1.74rem;
-    }
-    64% {
-      font-size: 1.84rem;
-    }
-    100% {
-      font-size: 1.94rem;
-    }
-  }
-
-h2, h3 {
-    font-weight: 500;
-    line-height: 1.2;
-    margin-bottom: 25px;
-}
-
 h2 {
-    --tt-key: h2;
+  font-size: 1.84rem;
+  font-weight: 700;
 }
 
-@keyframes h2 {
-    33.25% {
-      font-size: 1.34rem;
-    }
-    48% {
-      font-size: 1.44rem;
-    }
-    64% {
-      font-size: 1.54rem;
-    }
-    100% {
-      font-size: 1.64rem;
-    }
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 1.74rem;
   }
+}
 
+@media (max-width: 768px) {
+  h2 {
+    font-size: 1.84rem;
+  }
+}
+
+@media (max-width: 425px) {
+  h2 {
+    font-size: 1.54rem;
+  }
+}
+
+h3 {
+  font-size: 1.74rem;
+}
+
+@media (max-width: 1024px) {
   h3 {
-      --tt-key: h3;
+    font-size: 1.64rem;
   }
-
-  @keyframes h3 {
-    0%, 25.874999999999996% {
-        font-size: 1.1rem;
-      }
-      33.25% {
-        font-size: 1.2rem;
-      }
-      48% {
-        font-size: 1.3rem;
-      }
-      64% {
-        font-size: 1.4rem;
-      }
-      100% {
-        font-size: 1.5rem;
-      }
 }
 
+@media (max-width: 768px) {
+  h3 {
+    font-size: 1.74rem;
+  }
+}
+
+@media (max-width: 425px) {
+  h3 {
+    font-size: 1.44rem;
+  }
+}
 
 
 
 .large {
-    --tt-key: large;
+    font-size: 1.5rem;
     line-height: 1.2;
     margin-bottom: 30px;
 }
 
-@keyframes large {
-    0%, 25.874999999999996% {
-        font-size: 1.1rem;
-        margin-bottom: 0px;
-      }
-      33.25% {
-        font-size: 1.2rem;
-      }
-      48% {
-        font-size: 1.3rem;
-      }
-      64% {
-        font-size: 1.4rem;
-      }
-      100% {
-        font-size: 1.5rem;
-      }
-}
 
 .medium {
-    --tt-key: medium;
+    font-size: 1.25rem;
     line-height: 1.2;
     margin-bottom: 50px;
 }
 
-@keyframes medium {
-    0%, 30% {
-        font-size: 1.1rem;
-    }
-    100% {
-        font-size: 1.25rem
-    }
-} 
 
 .bold {
     font-weight: 700;
